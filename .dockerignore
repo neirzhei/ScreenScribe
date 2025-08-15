@@ -16,9 +16,6 @@ __pycache__/
 venv/
 .venv/
 
-# Models
-models/
-
 # IDE files
 .vscode/
 .idea/
