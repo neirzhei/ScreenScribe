@@ -36,14 +36,14 @@ This project is containerized using Docker for easy setup.
 
 - Run the command: `docker compose up --build`
 
-- The companion will now be running in the background. To stop it, press Ctrl+C in the terminal.
+- ScreenScribe will now be running in the background. To stop it, press Ctrl+C in the terminal.
 
 ## Potential Improvements
 
-- **Two-way Communication:** User being able to reply to the ScreenScribe's commentaries.
+- **Two-way Communication:** User being able to reply to ScreenScribe's commentaries.
 
 - **Conversational Memory:** A short-term memory system, allowing ScreenScribe to recall the last few interactions. This will make its comments more contextually relevant, natural, and engaging over time.
 
 - **GPU Acceleration:** Significantly reduce the time from screenshot to spoken comment.
 
-- **Cross-Platform Support:** Re-engineer the screen capture and audio playback modules to be compatible with Windows and macOS, making the companion OS-Independent.
+- **Cross-Platform Support:** Re-engineer the screen capture and audio playback modules to be compatible with Windows and macOS, making it OS-Independent.
