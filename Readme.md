@@ -40,7 +40,10 @@ This project is containerized using Docker for easy setup.
 
 ## Potential Improvements
 
-- **Two-way Communication:** User being able to reply to the companion's commentaries.
-- **Conversational Memory:** A short-term memory system, allowing the companion to recall the last few interactions. This will make its comments more contextually relevant, natural, and engaging over time.
+- **Two-way Communication:** User being able to reply to the ScreenScribe's commentaries.
+
+- **Conversational Memory:** A short-term memory system, allowing ScreenScribe to recall the last few interactions. This will make its comments more contextually relevant, natural, and engaging over time.
+
 - **GPU Acceleration:** Significantly reduce the time from screenshot to spoken comment.
+
 - **Cross-Platform Support:** Re-engineer the screen capture and audio playback modules to be compatible with Windows and macOS, making the companion OS-Independent.
