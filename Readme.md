@@ -16,21 +16,21 @@ To conserve system resources, each AI model is loaded into memory only when need
 ## Installation & Usage
 This project is containerized using Docker for easy setup.
 
-1. **Prerequisites:**
+#### Prerequisites:
 
-- A Linux-based operating system (tested on Debian/Ubuntu).
+- A Linux-based operating system (tested on Debian).
 
 - Docker and Docker Compose installed.
 
 - An active internet connection for the initial model download.
 
-2. **Configuration:**
+#### Configuration:
 
 - Clone the repository.
 
 - Key parameters like model repositories, GPU layer offloading (`LLM_GPU_LAYERS`), and commentary frequency (`MIN/MAX_INTERVAL_MINUTES`) can be adjusted in `src/config.py`.
 
-3. **Running the Application:**
+#### Running the Application:
 
 - Open a terminal in the project's root directory.
 
