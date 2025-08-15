@@ -34,7 +34,7 @@ This project is containerized using Docker for easy setup.
 
 - Open a terminal in the project's root directory.
 
-- Run the command: `docker-compose up --build`
+- Run the command: `docker compose up --build`
 
 - The companion will now be running in the background. To stop it, press Ctrl+C in the terminal.
 
