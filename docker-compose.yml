@@ -1,0 +1,26 @@
+services:
+  companion-app:
+    build: .
+    container_name: screenscribe
+    env_file:
+      - .env
+    environment:
+      - DISPLAY=${DISPLAY}
+        # Points to authorization cookie inside the container
+      - XAUTHORITY=/.Xauthority
+      - PULSE_SERVER=unix:${XDG_RUNTIME_DIR}/pulse/native
+      - PYTHONPATH=/app
+    volumes:
+        # X11 socket and the authorization cookie
+      - /tmp/.X11-unix:/tmp/.X11-unix:ro
+      - ~/.Xauthority:/.Xauthority:ro
+        # For persistent model cache
+      - huggingface_cache:/root/.cache/huggingface
+      - ${XDG_RUNTIME_DIR}/pulse/native:${XDG_RUNTIME_DIR}/pulse/native
+    devices:
+      - /dev/snd
+    network_mode: "host"
+    restart: unless-stopped
+
+volumes:
+  huggingface_cache:

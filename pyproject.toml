@@ -1,0 +1,37 @@
+[project]
+name = "ScreenScribe"
+version = "0.1.0"
+authors = [
+  { name="Neirzhei", email="neirzhei@gmail.com" },
+]
+description = "An offline-first AI companion that provides real-time, spoken commentary on screen activity."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { file = "LICENSE" }
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX :: Linux",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Multimedia :: Sound/Audio :: Speech",
+    "Environment :: X11 Applications",
+]
+
+[project.urls]
+Homepage = "https://github.com/neirzhei/ScreenScribe"
+
+dependencies = [
+    "torch==2.8.0",
+    "transformers==4.53.3",
+    "Pillow==11.3.0",
+    "mss==10.0.0",
+    "llama-cpp-python==0.3.15",
+    "piper-tts>=1.3.0",
+    "simpleaudio==1.0.4",
+    "python-dotenv==1.1.1",
+]
+
+[project.scripts]
+ai-companion = "src.app:main"
